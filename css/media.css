@@ -1,0 +1,58 @@
+/** الموبايلات الصغيره */
+  @media (max-width: 575.98px) {
+    .carousel-item .row {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+    }
+    .carousel-item .col-6 {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+
+
+@media (min-width: 768px) {
+  .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 800px;
+  }
+  .toggle-btn{
+    display: none !important;
+  }
+  .hidden{
+    display: none !important ;
+  }
+  .sidebar {
+    width: 100px !important;
+}
+
+}
+@media (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+  .hidden{
+    display: block !important ;
+  }
+ 
+ 
+}
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+  }
+  .toggle-btn{
+    display: none !important;
+  }
+  .sidebar {
+    width: 250px !important;
+}
+.hidden{
+  display: block !important ;
+}
+}

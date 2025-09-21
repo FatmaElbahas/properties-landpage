@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link href="./css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
+    <link href="./css/media.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: var(--main-color);">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./images/All-Properties-logo_H-e1756988161848.png" alt="All Properties Logo" width="33.11" height="38.38" style="filter: brightness(0) invert(1);">
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fw-semibold" href="#">HOME</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                            PROJECTS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Project 1</a></li>
+                            <li><a class="dropdown-item" href="#">Project 2</a></li>
+                            <li><a class="dropdown-item" href="#">Project 3</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                            PROPERTY TYPE
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Apartments</a></li>
+                            <li><a class="dropdown-item" href="#">Villas</a></li>
+                            <li><a class="dropdown-item" href="#">Townhouses</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                            CITIES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Dubai</a></li>
+                            <li><a class="dropdown-item" href="#">Abu Dhabi</a></li>
+                            <li><a class="dropdown-item" href="#">Sharjah</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                            DEVELOPERS
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Developer 1</a></li>
+                            <li><a class="dropdown-item" href="#">Developer 2</a></li>
+                            <li><a class="dropdown-item" href="#">Developer 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section class="hero-section">
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Binghatti Skyrise</h1>
+                        <p class="hero-subtitle">Apartments, Studios | 1-3 Bedrooms | Business Bay | Dubai</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Price and Action Section -->
+        <section class="price-action-section bg-gray">
+            <div class="container price-action py-4">
+                <div class="price-info">
+                    <p class="price-text">Prices Starts From <span class="price-amount">AED 1,030,000</span></p>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn btn-success">Download Brochure</button>
+                    <button class="btn btn-warning">Get A Free Consultation</button>
+                </div>
+            </div>
+        </section>
+        <section class="data-section">
+            <div class="container">
+                <div class="data-content">
+                <div class="row g-3" >
+                    <div class="col-12 col-md-12 col-lg-6 order-2 order-md-1 " >
+                        <img class="img-fluid property-image-container" src="https://allproperties.ae/wp-content/uploads/2024/11/2-20.jpg" alt="Property Image" class="property-image">
+                    </div>
+                   
+                    <div class="col-12 col-md-12 col-lg-6 order-1 order-md-2 " >
+                        <div class="register-form-container">
+                            <h2 class="register-title d-flex   gap-2">
+                                <span class="title-main">REGISTER</span>
+                                <span class="title-sub">YOUR INTEREST</span>
+                            </h2>
+                            
+                            <form class="interest-form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name *" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email *" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <div class="phone-input">
+                                        <div class="country-selector">
+                                            <img src="./images/ar.png" alt="Country Flag" class="flag-icon">
+                                            <span class="dropdown-arrow">▼</span>
+                                        </div>
+                                        <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+                                
+                                <button type="submit" class="btn-submit text-center d-block ">SUBMIT NOW</button>
+                            </form>
+                        </div>
+                    </div>
+                  
+                  
+                </div>
+            </div>
+        </section>
+        
+        <!-- Binghatti Skyrise Details Section -->
+        <section class="binghatti-details-section">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="details-content">
+                            <h2 class="details-title">Binghatti Skyrise</h2>
+                            <h3 class="details-subtitle">Binghatti Skyrise: An Icon in the Heart of Business Bay</h3>
+                            <p class="details-text">
+                                Welcome to Binghatti Skyrise, a revolutionary development in the iconic Business Bay, where architectural brilliance meets unmatched luxury, Binghatti Skyrise offers an exclusive selection of premium studios, 1, 2, and 3-bedroom apartments, meticulously designed for those who seek elegance, comfort, and an extraordinary lifestyle. With stunning views of the Dubai Canal and the city's most revered landmarks, such as the Burj Khalifa, this high-rise trio represents more than just a place to live.
+                            </p>
+                            <p class="details-text">
+                                Strategically positioned in one of Dubai's most prestigious business hubs, Binghatti Skyrise is not only Business Bay's first mega-development but also a symbol of innovation and sophistication. Its architectural design emphasizes sleek, fluid lines, illuminated crowns, and a crystalline facade, ensuring it stands out as a brilliant addition to Dubai's skyline both day and night.
+                            </p>
+                            <button class="btn btn-details">Get More Details</button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="details-image-container">
+                            <img src="./images/1-27.jpg" alt="Binghatti Skyrise" class="img-fluid details-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="payment-section">
+            <h2 class="title text-center">Payment <span>plan</span> </h2>
+            <div class="container payment-content">
+              <div class="overlay">
+                <div class="container text-center">
+                   <div class="row ">
+                        <div class="col-lg-4">
+                            
+                              <div>
+                                <h2 class="payment-title">20%</h2>
+                                <p class="fs-22">Down Payment</p>
+                              </div>
+                           
+                        </div>
+                        <div class="col-lg-4">
+                            
+                                <h2 class="payment-title">50%</h2>
+                                <p class="fs-22">During Construction</p>
+                            
+                        </div>
+                        <div class="col-lg-4">
+                           
+                                <h2 class="payment-title">30%</h2>
+                                <p>On Handover</p>
+                            
+                        </div>
+                   </div>
+                   <button class="btn btn-details mt-4">More Details About Payment Plan</button>
+
+                </div>
+              </div>
+            </div>
+        </section>
+        
+        <!-- Project Facts Section -->
+        <section class="project-facts-section" style="margin-bottom: 75px;">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-6">
+                        <div class="project-facts-image-container">
+                            <img src="./images/facts.jpg" alt="Project Facts" class="img-fluid project-facts-image">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="project-facts-content">
+                            <h2 class="title" style="margin: 0 0 25px; padding: 0 0 0 0;">Project <span>Facts</span></h2>
+                            <div class="facts-list mt-0">
+                                <div class="fact-item">
+                                    <div class="fact-label">Property Type</div>
+                                    <div class="fact-value">Studios & 1 - 3 Br Apartments</div>
+                                </div>
+                                <div class="fact-item">
+                                    <div class="fact-label">Developer</div>
+                                    <div class="fact-value">Binghatti Properties</div>
+                                </div>
+                                <div class="fact-item">
+                                    <div class="fact-label">Area Size</div>
+                                    <div class="fact-value">From 422 Sq. Ft</div>
+                                </div>
+                                <div class="fact-item">
+                                    <div class="fact-label">Starting Prices</div>
+                                    <div class="fact-value">AED 1,030,000</div>
+                                </div>
+                                <div class="fact-item">
+                                    <div class="fact-label">Payment Plan</div>
+                                    <div class="fact-value">70% / 30%</div>
+                                </div>
+                                <div class="fact-item">
+                                    <div class="fact-label">WHO CAN BUY</div>
+                                    <div class="fact-value">Freehold For All Nationalities</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Free Consultation Section -->
+       
+     
+        <section class="payment-section">
+            <div class="container payment-content consult">
+              <div class="overlay2  ">
+                <div class="container content position-absolute top-50 start-50 translate-middle">
+                    <div class="row ">
+                        <div class="col-lg-8">
+                            <div class="consultation-text text-center">
+                                <h3>We are here to answer all your inquiries</h3>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="consultation-button  ">
+                                <button class="btn-consultation d-block text-center">Get A Free Consultation</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- JavaScript Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
