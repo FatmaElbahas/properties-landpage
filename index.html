@@ -87,26 +87,39 @@
     </nav>
     
     <main>
-        <section class="hero-section">
+        <section class="hero-section ">
             <div class="hero-overlay">
                 <div class="container">
                     <div class="hero-content">
-                        <h1 class="hero-title">Binghatti Skyrise</h1>
-                        <p class="hero-subtitle">Apartments, Studios | 1-3 Bedrooms | Business Bay | Dubai</p>
-                    </div>
+                        <h1 class="hero-title ">Binghatti Skyrise</h1>
+                        
+                        <div class="hero-subtitle d-block d-lg-flex flex-wrap gap-2"> <p>Apartments, Studios | 1-3 Bedrooms</p>
+                          <p class="text-center">Business Bay | Dubai</p>
+                          
+                        </div>
+                     <!-- Mobile Fixed Download Button -->
+        <div class="mobile-download-btn d-block d-md-none  warning">
+          <button class="btn btn-warnings text-center text-white" style="width: fit-content;">Download Brochure</button>
+      </div>
+                      </div>
+                      
+       
                 </div>
             </div>
         </section>
         
+      
+        
         <!-- Price and Action Section -->
         <section class="price-action-section bg-gray">
-            <div class="container price-action py-4">
-                <div class="price-info">
-                    <p class="price-text">Prices Starts From <span class="price-amount">AED 1,030,000</span></p>
+            <div class="container price-action py-3">
+                <div class="price-info d-flex flex-column flex-md-col flex-lg-row  gap-1">
+                    <p class="price-text text-center mt-1">Prices Starts From </p>
+                    <p class="price-amount text-center mt-0 mb-0">AED 1,030,000</p>
                 </div>
                 <div class="action-buttons">
-                    <button class="btn btn-success">Download Brochure</button>
-                    <button class="btn btn-warning">Get A Free Consultation</button>
+                    <button class="btn btn-success flex-wrap d-none d-md-none d-lg-block ">Download Brochure</button>
+                    <button class="btn btn-warning d-none d-md-none d-lg-block">Get A Free Consultation</button>
                 </div>
             </div>
         </section>
@@ -156,7 +169,7 @@
         </section>
         
         <!-- Binghatti Skyrise Details Section -->
-        <section class="binghatti-details-section">
+        <section class="binghatti-details-section mb-0">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
@@ -172,7 +185,7 @@
                             <button class="btn btn-details">Get More Details</button>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="d-none d-md-none d-lg-block col-lg-6 ">
                         <div class="details-image-container">
                             <img src="./images/exterior/1-27.jpg" alt="Binghatti Skyrise" class="img-fluid details-image">
                         </div>
@@ -180,79 +193,87 @@
                 </div>
             </div>
         </section>
-        <section class="payment-section">
-            <h2 class="title text-center">Payment <span>plan</span> </h2>
-            <div class="container payment-content">
-              <div class="overlay">
-                <div class="container text-center">
-                   <div class="row ">
-                        <div class="col-lg-4">
-                            
-                              <div>
-                                <h2 class="payment-title">20%</h2>
-                                <p class="fs-22">Down Payment</p>
-                              </div>
-                           
-                        </div>
-                        <div class="col-lg-4">
-                            
-                                <h2 class="payment-title">50%</h2>
-                                <p class="fs-22">During Construction</p>
-                            
-                        </div>
-                        <div class="col-lg-4">
-                           
-                                <h2 class="payment-title">30%</h2>
-                                <p>On Handover</p>
-                            
-                        </div>
-                   </div>
-                   <button class="btn btn-details mt-4">More Details About Payment Plan</button>
-
+        <section class="payment-section pay mt-0 mb-0">
+          <h2 class="title text-center mt-0">Payment <span>plan</span> </h2>
+        
+          <div class="container payment-content">
+            <div class="overlay d-flex justify-content-center align-items-center text-center">
+              <div class="row w-100">
+                <div class="col-4">
+                  <h2 class="payment-title mb-0">20%</h2>
+                  <p class="fs-22 mt-0">Down Payment</p>
+                </div>
+                <div class="col-4">
+                  <h2 class="payment-title mb-0">50%</h2>
+                  <p class="fs-22 mt-0">During Construction</p>
+                </div>
+                <div class="col-4">
+                  <h2 class="payment-title mb-0">30%</h2>
+                  <p class="fs-22 mt-0">On Handover</p>
                 </div>
               </div>
             </div>
+          </div>
+        
+          <button class="btn btn-details mt-4 text-center mx-auto d-block">More Details About Payment Plan</button>
         </section>
         
         <!-- Project Facts Section -->
         <section class="project-facts-section" style="margin-bottom: 75px;">
             <div class="container">
                 <div class="row ">
-                    <div class="col-lg-6">
+                      <div class="col-12 col-md-12 col-lg-6">
                         <div class="project-facts-image-container">
                             <img src="./images/facts.jpg" alt="Project Facts" class="img-fluid project-facts-image">
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="project-facts-content">
-                            <h2 class="title" style="margin: 0 0 25px; padding: 0 0 0 0;">Project <span>Facts</span></h2>
-                            <div class="facts-list mt-0">
-                                <div class="fact-item">
-                                    <div class="fact-label">Property Type</div>
-                                    <div class="fact-value">Studios & 1 - 3 Br Apartments</div>
-                                </div>
-                                <div class="fact-item">
-                                    <div class="fact-label">Developer</div>
-                                    <div class="fact-value">Binghatti Properties</div>
-                                </div>
-                                <div class="fact-item">
-                                    <div class="fact-label">Area Size</div>
-                                    <div class="fact-value">From 422 Sq. Ft</div>
-                                </div>
-                                <div class="fact-item">
-                                    <div class="fact-label">Starting Prices</div>
-                                    <div class="fact-value">AED 1,030,000</div>
-                                </div>
-                                <div class="fact-item">
-                                    <div class="fact-label">Payment Plan</div>
-                                    <div class="fact-value">70% / 30%</div>
-                                </div>
-                                <div class="fact-item">
-                                    <div class="fact-label">WHO CAN BUY</div>
-                                    <div class="fact-value">Freehold For All Nationalities</div>
-                                </div>
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <div class="project-facts-content">
+                        <h2 class="title mb-4">Project <span>Facts</span></h2>
+                        <div class="row g-3 facts-list">
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <div class="fact-item">
+                              <div class="fact-label">Property Type</div>
+                              <div class="fact-value">Studios & 1 - 3 Br Apartments</div>
                             </div>
+                          </div>
+                        
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <div class="fact-item">
+                              <div class="fact-label">Developer</div>
+                              <div class="fact-value">Binghatti Properties</div>
+                            </div>
+                          </div>
+                        
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <div class="fact-item">
+                              <div class="fact-label">Area Size</div>
+                              <div class="fact-value">From 422 Sq. Ft</div>
+                            </div>
+                          </div>
+                        
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <div class="fact-item">
+                              <div class="fact-label">Starting Prices</div>
+                              <div class="fact-value">AED 1,030,000</div>
+                            </div>
+                          </div>
+                        
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <div class="fact-item">
+                              <div class="fact-label">Payment Plan</div>
+                              <div class="fact-value">70% / 30%</div>
+                            </div>
+                          </div>
+                        
+                          <div class="col-12 col-md-12 col-lg-12">
+                            <div class="fact-item">
+                              <div class="fact-label">Who Can Buy</div>
+                              <div class="fact-value">Freehold For All Nationalities</div>
+                            </div>
+                          </div>
                         </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -265,15 +286,15 @@
             <div class="container payment-content consult">
               <div class="overlay2  ">
                 <div class="container content position-absolute top-50 start-50 translate-middle">
-                    <div class="row ">
+                    <div class="row d-flex flex-column flex-md-row justify-content-center align-items-center  ">
                         <div class="col-lg-8">
                             <div class="consultation-text text-center">
                                 <h3>We are here to answer all your inquiries</h3>
                             </div>
                         </div>
                         <div class="col-lg-4">
-                            <div class="consultation-button  ">
-                                <button class="btn-consultation d-block text-center">Get A Free Consultation</button>
+                            <div class="consultation-button text-center mx-auto ">
+                                <button class="btn-consultation  text-center">Get A Free Consultation</button>
                             </div>
                         </div>
                     </div>
@@ -285,71 +306,85 @@
         <section class="Amenities-section">
             <h2 class="title text-center">Amenities <span>& Facilities</span></h2>
 <div class="Amenities-content">
-    <div class="container  ">
+    <div class="  ">
         <div class="row">
             <div class="col-lg-12 ">
                 <div class="overlay3">
-                    <div class="container">
-                   <div class="row">
-                   
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-                            <div class="d-flex  justify-content-center align-items-center gap-4">
-                             <img src="./images/sports.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                               <h5>Sports Courts</h5>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                             <img src="./images/restaurant.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                             <h5>Restaurants</h5>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                             <img src="./images/weights.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                             <h5>Gyms</h5>
-                            </div>
-                         
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-                            <div class="d-flex  justify-content-center align-items-center gap-4">
-                              <img src="./images/jogging.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                               <h5>Jogging Tracks</h5>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center gap-3">
-                             <img src="./images/playground.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                             <h5>Kids' Play Area</h5>
-                            </div>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                             <img src="./images/beach.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                             <h5>Beach Access</h5>
-                            </div>
-                         
-                        </div>
-                    </div>
+                    <div class="">
+                      <div class="row g-4 justify-content-center">
 
-                    <div class="col-lg-4">
-                        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
-                            <div class="d-flex  justify-content-center align-items-center gap-4">
-                             <img src="./images/track-bicycle.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                               <h5>Cycling Tracks
-                            </h5>
-                            </div>
-                            <div class="d-flex  justify-content-center align-items-center gap-4">
-                                <img src="./images/cafe.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                                  <h5>Cafe
-                               </h5>
-                               </div>
-                            <div class="d-flex justify-content-center align-items-center gap-4">
-                             <img src="./images/hospital-facility.png" class="img-fluid" style="width: 62px; height: 62px;" alt="sports-club">
-                             <h5>Health Care Centers
-                            </h5>
-                            </div>
-                         
+                        <!-- 1 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/sports.png" class="img-fluid" style="width:62px;height:62px;" alt="sports-club">
+                            <h5>Sports Courts</h5>
+                          </div>
                         </div>
-                    </div>
-                 
-                   
-                   </div>
+                      
+                        <!-- 2 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/restaurant.png" class="img-fluid" style="width:62px;height:62px;" alt="restaurant">
+                            <h5>Restaurants</h5>
+                          </div>
+                        </div>
+                      
+                        <!-- 3 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/weights.png" class="img-fluid" style="width:62px;height:62px;" alt="gym">
+                            <h5>Gyms</h5>
+                          </div>
+                        </div>
+                      
+                        <!-- 4 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/jogging.png" class="img-fluid" style="width:62px;height:62px;" alt="jogging">
+                            <h5>Jogging Tracks</h5>
+                          </div>
+                        </div>
+                      
+                        <!-- 5 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/playground.png" class="img-fluid" style="width:62px;height:62px;" alt="playground">
+                            <h5>Kids' Play Area</h5>
+                          </div>
+                        </div>
+                      
+                        <!-- 6 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/beach.png" class="img-fluid" style="width:62px;height:62px;" alt="beach">
+                            <h5>Beach Access</h5>
+                          </div>
+                        </div>
+                     
+                        <!-- 6 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/beach.png" class="img-fluid" style="width:62px;height:62px;" alt="beach">
+                            <h5>Beach Access</h5>
+                          </div>
+                        </div>
+                      
+                        <!-- 6 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/beach.png" class="img-fluid" style="width:62px;height:62px;" alt="beach">
+                            <h5>Beach Access</h5>
+                          </div>
+                        </div>
+                        
+                        <!-- 6 -->
+                        <div class="col-6 col-md-4">
+                          <div class="d-flex justify-content-center align-items-center gap-3">
+                            <img src="./images/beach.png" class="img-fluid" style="width:62px;height:62px;" alt="beach">
+                            <h5>Beach Access</h5>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -410,14 +445,10 @@
            
           </section>
    
-        <section class="discover-section py-5 bg-white" >
-            <div class="container" style="width: 90%; margin: 0 auto;">
+        <section class="discover-section py-4 bg-white" >
+            <div class="container" style="width: 90%; margin-bottom: 50px !important; margin-top: 50px !important;">
               <div class="discover-header d-flex justify-content-center gap-5  ">
                 <h2 class="title text-center flex-wrap  ">Discover <span>More Projects</span></h2>
-                <div class="discover-arrows mt-2 ">
-                    <i class="fa-solid fa-arrow-left discover-prev1"></i>
-                    <i class="fa-solid fa-arrow-right discover-next1"></i>
-                  </div>
               </div>
           
               <!-- Swiper Container -->
@@ -510,6 +541,16 @@
           
                 </div>
               </div>
+              <!-- Discover Navigation Buttons (match galleries) -->
+             
+            </div>
+            <div class="gallery-navigation ">
+              <button class="gallery-btn discover-prev" id="discoverPrev">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="gallery-btn discover-next" id="discoverNext">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
           </section>
 
@@ -520,7 +561,7 @@
     <div class="container">
       <!-- Header -->
       <div class="galleries-header text-center mb-5">
-        <h2 class="galleries-title">Discover Galleries</h2>
+        <h2 class="galleries-title">Discover <span>Galleries</span></h2>
         <div class="galleries-tabs">
           <button class="tab-btn active" data-tab="exterior">Exterior</button>
           <button class="tab-btn" data-tab="interior">Interior</button>
@@ -606,7 +647,7 @@
                 <div class="col-12 bg-white">
                   <div class="gallery-card bg-white ">
                     <div class="gallery-image-container ">
-                      <img src="./images/interior/Studio-1.jpg" alt="Exterior View 9" class="gallery-image">
+                      <img src="./images/Studio-1.jpg" alt="Exterior View 9" class="gallery-image">
                     </div>
                   </div>
                 </div>
@@ -615,7 +656,7 @@
                 <div class="col-12">
                   <div class="gallery-card">
                     <div class="gallery-image-container">
-                      <img src="./images/interior/2-BR-3-1.jpg" alt="Interior View 3" class="gallery-image">
+                      <img src="./images/2-BR-3-1.jpg" alt="Interior View 3" class="gallery-image">
                     </div>
                   </div>
                 </div>
@@ -624,7 +665,7 @@
                 <div class="col-12">
                   <div class="gallery-card">
                     <div class="gallery-image-container">
-                      <img src="./images/interior/3-BR-4-1.jpg" alt="Interior View 4" class="gallery-image">
+                      <img src="./images/3-BR-4-1.jpg" alt="Interior View 4" class="gallery-image">
                     </div>
                   </div>
                 </div>
@@ -655,85 +696,82 @@
   </section>
 
           <!-- Explore More Section -->
-          <section class="explore-more-section position-relative">
-         <div class="layer position-absolute top-0 start-0 end-0 bottom-0">
-            <div class="container">
-                <div class="explore-content" style="padding: 10px 0;">
-                  <!-- Hero Section -->
-                  <div class="explore-hero">
-                    <div class="d-flex flex-column justify-content-between align-items-center gap-3">
-                        <h1 class="hero-title">LOOKING TO BUY A PROPERTY?</h1>
-                    
-                    
-                    <button class="btn-get-touch">Get In Touch <i class="fa-solid fa-arrow-right"></i></button>
-                    </div>
-                  
-                  <!-- Information Sections -->
-                  <div class="explore-info">
-                    <div class="info-grid">
-                      <!-- Property by Type -->
-                      <div class="info-column">
-                        <h3 class="info-title">PROPERTY BY TYPE</h3>
-                        <ul class="info-list">
-                          <li><a href="#">Apartments For Sale</a></li>
-                          <li><a href="#">Villas For Sale</a></li>
-                          <li><a href="#">Townhouses For Sale</a></li>
-                          <li><a href="#">Penthouse For Sale</a></li>
-                          <li><a href="#">Commercial Plots For Sale</a></li>
-                        </ul>
-                      </div>
-                      
-                      <!-- Property by Area -->
-                      <div class="info-column">
-                        <h3 class="info-title">PROPERTY BY AREA</h3>
-                        <ul class="info-list">
-                          <li><a href="#">Saadiyat Island</a></li>
-                          <li><a href="#">Al Reem Island</a></li>
-                          <li><a href="#">Al Raha Beach</a></li>
-                          <li><a href="#">Yas Island</a></li>
-                        </ul>
-                      </div>
-                      
-                      <!-- Find a Developer -->
-                      <div class="info-column">
-                        <h3 class="info-title">FIND A DEVELOPER</h3>
-                        <ul class="info-list">
-                          <li><a href="#">Al Dar Properties</a></li>
-                          <li><a href="#">Modon Properties</a></li>
-                          <li><a href="#">Emaar Properties</a></li>
-                          <li><a href="#">Damac Properties</a></li>
-                          <li><a href="#">Binghatti Properties</a></li>
-                          <li><a href="#">Bloom Holding</a></li>
-                          <li><a href="#" class="explore-more-link">Explore More</a></li>
-                        </ul>
-                      </div>
-                      
-                      <!-- Featured Projects -->
-                      <div class="info-column">
-                        <h3 class="info-title">FEATURED PROJECTS</h3>
-                        <ul class="info-list">
-                          <li><a href="#">Al Deem</a></li>
-                          <li><a href="#">Fahid Beach Terraces</a></li>
-                          <li><a href="#">Fahid Beach Residences</a></li>
-                          <li><a href="#">Muheira at Maysan</a></li>
-                          <li><a href="#">Rivage</a></li>
-                          <li><a href="#">The Wilds</a></li>
-                          <li><a href="#">Verdes by Haven Aldar</a></li>
-                          <li><a href="#" class="explore-more-link">Explore More</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                
-                
-                </div>
-                  
-          
-                </div>
-              </div>
+        <section class="explore-more-section position-relative">
+  <div class="layer position-absolute top-0 start-0 end-0 bottom-0">
+    <div class="container ">
+      <div class="explore-content start">
+        
+        <!-- Hero Section -->
+        <div class="explore-hero mb-5">
+          <h1 class="hero-title mt-5  ">LOOKING TO BUY A PROPERTY?</h1>
+          <button class="btn btn-warning btn-lg mt-5">
+            Get In Touch <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+
+        <!-- Information Sections -->
+        <div class="explore-info">
+          <div class="row g-3 text-start">
+            
+            <!-- Property by Type -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3 class="info-title">PROPERTY BY TYPE</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Apartments For Sale</a></li>
+                <li><a href="#">Villas For Sale</a></li>
+                <li><a href="#">Townhouses For Sale</a></li>
+                <li><a href="#">Penthouse For Sale</a></li>
+                <li><a href="#">Commercial Plots For Sale</a></li>
+              </ul>
             </div>
-          </section>
-          
+
+            <!-- Property by Area -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3 class="info-title">PROPERTY BY AREA</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Saadiyat Island</a></li>
+                <li><a href="#">Al Reem Island</a></li>
+                <li><a href="#">Al Raha Beach</a></li>
+                <li><a href="#">Yas Island</a></li>
+              </ul>
+            </div>
+
+            <!-- Find a Developer -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3 class="info-title">FIND A DEVELOPER</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Al Dar Properties</a></li>
+                <li><a href="#">Modon Properties</a></li>
+                <li><a href="#">Emaar Properties</a></li>
+                <li><a href="#">Damac Properties</a></li>
+                <li><a href="#">Binghatti Properties</a></li>
+                <li><a href="#">Bloom Holding</a></li>
+                <li><a href="#" class="explore-more-link">Explore More</a></li>
+              </ul>
+            </div>
+
+            <!-- Featured Projects -->
+            <div class="col-12 col-sm-6 col-lg-3">
+              <h3 class="info-title">FEATURED PROJECTS</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Al Deem</a></li>
+                <li><a href="#">Fahid Beach Terraces</a></li>
+                <li><a href="#">Fahid Beach Residences</a></li>
+                <li><a href="#">Muheira at Maysan</a></li>
+                <li><a href="#">Rivage</a></li>
+                <li><a href="#">The Wilds</a></li>
+                <li><a href="#">Verdes by Haven Aldar</a></li>
+                <li><a href="#" class="explore-more-link">Explore More</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
     </main>
 
     <!-- Footer -->
@@ -741,8 +779,8 @@
       <div class="footer-top-strip"></div>
       <div class="footer-content">
         <div class="container">
-          <div class="footer-row">
-            <div class="footer-left">
+          <div class="footer-row d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div class="f">
               <div class="footer-logo">
                 <img src="./images/All-Properties-logo_H-e1756988161848.png" alt="All Properties Logo" class="logo-img">
               </div>
@@ -750,7 +788,7 @@
                 <p>© 2025 Copyright All Properties.</p>
               </div>
             </div>
-            <div class="footer-right">
+            <div class="">
               <nav class="footer-nav">
                 <a href="#" class="footer-link">Home</a>
                 <a href="#" class="footer-link">Cities</a>
@@ -773,14 +811,15 @@
   new Swiper('.discover-swiper', {
     loop: true,
     spaceBetween: 18,
-    slidesPerView: 1.15,
+    slidesPerView: 1,
     navigation: {
-      nextEl: '.discover-next1',
-      prevEl: '.discover-prev1'
+      nextEl: '#discoverNext',
+      prevEl: '#discoverPrev'
     },
     breakpoints: {
-      576: { slidesPerView: 1.6, spaceBetween: 18 },
-      768: { slidesPerView: 2.2, spaceBetween: 20 },
+      0:   { slidesPerView: 1, spaceBetween: 16, centeredSlides: true },
+      576: { slidesPerView: 1, spaceBetween: 18, centeredSlides: true },
+      768: { slidesPerView: 2, spaceBetween: 20, centeredSlides: false },
       992: { slidesPerView: 3,   spaceBetween: 22 },
       1200:{ slidesPerView: 4,   spaceBetween: 22 }
     }
@@ -816,21 +855,18 @@
           slidesPerView: 2,
           spaceBetween: 25,
           loop: false,
+          centeredSlides: true,
+          centeredSlidesBounds: true,
           pagination: {
             el: '#exterior .swiper-pagination',
             clickable: true,
           },
           allowTouchMove: false, // Disable touch navigation
           breakpoints: {
-            992: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            480: {
-              slidesPerView: 1,
-            }
+            992: { slidesPerView: 2, centeredSlides: false },
+            768: { slidesPerView: 2, centeredSlides: false },
+            576: { slidesPerView: 1, centeredSlides: true },
+            0:   { slidesPerView: 1, centeredSlides: true }
           }
         });
       }
@@ -842,21 +878,18 @@
           slidesPerView: 2,
           spaceBetween: 25,
           loop: false,
+          centeredSlides: true,
+          centeredSlidesBounds: true,
           pagination: {
             el: '#interior .swiper-pagination',
             clickable: true,
           },
           allowTouchMove: false, // Disable touch navigation
           breakpoints: {
-            992: {
-              slidesPerView: 2,
-            },
-            768: {
-              slidesPerView: 2,
-            },
-            480: {
-              slidesPerView: 1,
-            }
+            992: { slidesPerView: 2, centeredSlides: false },
+            768: { slidesPerView: 2, centeredSlides: false },
+            576: { slidesPerView: 1, centeredSlides: true },
+            0:   { slidesPerView: 1, centeredSlides: true }
           }
         });
       }

@@ -1,58 +1,334 @@
-/** الموبايلات الصغيره */
-  @media (max-width: 575.98px) {
-    .carousel-item .row {
-      display: flex;
-      flex-wrap: nowrap;
-      overflow-x: auto;
-    }
-    .carousel-item .col-6 {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
+@media (max-width: 768px) {
+  .payment-content .overlay .payment-title {
+    font-size: 40px;
   }
-
-
-@media (min-width: 768px) {
-  .container-md, .container-sm, .container {
-    max-width: 960px;
+  .fs-22 {
+    font-size: 14px !important;
+  }
+  .btn.btn-details {
+    font-size: 12px;
+    margin-top: 20px !important;
   }
 }
-@media (min-width: 992px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 800px;
+/* Responsive for Project Facts Section */
+@media (max-width: 992px) {
+  .project-facts-section { padding: 50px 0; height: auto; }
+  .project-facts-content { padding: 24px 18px; margin-top: 24px; }
+  .project-facts-image-container { border-radius: 20px; height: 420px; }
+  .facts-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 14px; }
+  .facts-list { 
+    display: grid;
+    grid-template-columns: 1fr;  /* موبايل: عمود واحد */
+    gap: 10px 14px; 
+    width: 100%;
+    max-width: none;
+    margin: 0;
   }
-  .toggle-btn{
-    display: none !important;
+  .fact-label { width: 100% !important; }
+  .fact-value { width: 100% !important; }
+
+  /* Consultation Section - tablet */
+  .consultation-section { padding: 40px 0; }
+  .consultation-content {
+    padding: 24px 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
   }
-  .hidden{
-    display: none !important ;
+  .consultation-text h3 { font-size: 20px; text-align: center; margin-bottom: 20px; }
+  .consultation-button { text-align: center; }
+
+  /* Amenities - tablet */
+  .Amenities-content { height: 320px; padding: 24px 18px; }
+  /* keep overlay covering the image */
+  .Amenities-section .overlay3 { position: absolute; top:0; left:0; right:0; bottom:0; padding: 16px; }
+  .Amenities-section .overlay3 h5 { font-size: 16px !important; }
+  .Amenities-section img { width: 56px !important; height: 56px !important; }
+  /* remove rounded on tablet */
+  .Amenities-content, .overlay3 { border-radius: 0 !important; }
+
+  /* Global: remove rounded corners for cards/images on tablet (except galleries cards) */
+  .discover-card,
+  .galleries-swiper .swiper-slide,
+  .discover-swiper .swiper-slide,
+  .project-facts-image-container,
+  .project-facts-image,
+  .furniture-image-container,
+  .details-image,
+  .property-image-container,
+  .payment-content,
+  .payment-content .overlay,
+  .consultation-content,
+  .consultation-section::before,
+  .Amenities-content,
+  .overlay3 {
+    border-radius: 0 !important;
   }
-  .sidebar {
-    width: 100px !important;
+
+  /* Titles: Discover More Projects, Discover Galleries, Amenities (tablet) */
+  .discover-header .title,
+  .discover-galleries-section .galleries-title,
+  .Amenities-section .title {
+    font-size: 28px !important;
+    white-space: nowrap;
+  }
+  .discover-header .title span,
+  .Amenities-section .title span { font-size: 28px !important; }
+
+  /* Global section titles - tablet */
+  .title { font-size: 28px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .details-title { font-size: 28px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .furniture-title { font-size: 26px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .project-facts-title { font-size: 24px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .galleries-title { font-size: 28px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* Footer - tablet */
+  .site-footer .footer-content { padding: 24px 0; }
+  .site-footer .footer-row { gap: 16px; }
+  .site-footer .footer-nav { gap: 20px; flex-wrap: wrap; justify-content: center; }
+  .site-footer .logo-img { height: 36px; }
 }
 
-}
-@media (min-width: 1200px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+
+
+@media (max-width: 576px) {
+  .project-facts-image-container { height: 220px; }
+  .facts-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 14px; }
+  .fact-label { padding: 10px 14px; font-size: 15px; }
+  .fact-value { font-size: 13px; }
+
+  /* Consultation Section - mobile */
+  .consultation-text h3 { font-size: 18px; }
+  .consultation-section { padding: 24px 0; }
+  .consultation-content {
+    padding: 18px 14px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0;
   }
-  .hidden{
-    display: block !important ;
+  .consultation-section::before { border-radius: 0; }
+  .overlay2 { border-radius: 0; }
+  .consultation-button { text-align: center; margin-top: 10px; }
+  .btn-consultation { padding: 10px 20px; font-size: 13px; }
+
+  /* Map section text sizes - large phones */
+  .map-section .register-title .title-sub { font-size: 22px; }
+  .map-section .interest-form .form-control { font-size: 16px; padding: 12px 16px; }
+  .map-section .btn-submit { font-size: 16px; padding: 12px 24px; }
+  .map-section .overlay5 p { font-size: 17px; line-height: 1.55; }
+}
+
+/* Amenities responsive tweaks */
+@media (max-width: 992px) {
+  .Amenities-section .overlay3 h5 { font-size: 16px !important; }
+}
+@media (max-width: 768px) {
+  .Amenities-content { height: 280px; padding: 20px 12px; }
+  .Amenities-section .overlay3 { position: absolute; top:0; left:0; right:0; bottom:0; padding: 12px; }
+  .Amenities-section .overlay3 h5 { font-size: 15px !important; }
+  .Amenities-section img { width: 52px !important; height: 52px !important; }
+  /* remove rounded on mobile */
+  .Amenities-content, .overlay3 { border-radius: 0 !important; }
+
+  /* Global: remove rounded corners for cards/images on mobile (except galleries cards) */
+  .discover-card,
+  
+  
+  .project-facts-image-container,
+  .project-facts-image,
+  .furniture-image-container,
+  .details-image,
+  .property-image-container,
+  .payment-content,
+  .payment-content .overlay,
+  .consultation-content,
+  .consultation-section::before,
+  .Amenities-content,
+  .overlay3 {
+    border-radius: 0 !important;
+  }
+
+  /* Titles: Discover More Projects, Discover Galleries, Amenities (mobile lg) */
+  .discover-header .title,
+  .discover-galleries-section .galleries-title,
+  .Amenities-section .title {
+    font-size: 24px !important;
+    white-space: nowrap;
+  }
+  .discover-header .title span,
+  .Amenities-section .title span { font-size: 24px !important; }
+
+  /* Global section titles - mobile (≥576px & <768px) */
+  .title { font-size: 24px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .details-title { font-size: 24px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .furniture-title { font-size: 22px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .project-facts-title { font-size: 22px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .galleries-title { font-size: 24px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* Footer - large phones */
+  .site-footer .footer-row { flex-direction: column; text-align: center; gap: 16px; }
+  .site-footer .footer-left { flex-direction: column; gap: 12px; }
+  .site-footer .footer-nav { gap: 16px; }
+  .site-footer .footer-link { font-size: 13px; }
+}
+@media (max-width: 576px) {
+  .Amenities-content { height: 240px; padding: 16px 10px; }
+  .Amenities-section .overlay3 { position: absolute; top:0; left:0; right:0; bottom:0; padding: 10px; }
+  .Amenities-section .overlay3 h5 { font-size: 14px !important; }
+  .Amenities-section img { width: 48px !important; height: 48px !important; }
+  .Amenities-content, .overlay3 { border-radius: 0 !important; }
+
+  /* Global: remove rounded corners for cards/images on small phones (except galleries cards) */
+  .discover-card,
+  .galleries-swiper .swiper-slide,
+  .discover-swiper .swiper-slide,
+  .project-facts-image-container,
+  .project-facts-image,
+  .furniture-image-container,
+  .details-image,
+  .property-image-container,
+  .payment-content,
+  .payment-content .overlay,
+  .consultation-content,
+  .consultation-section::before,
+  .Amenities-content,
+  .overlay3 {
+    border-radius: 0 !important;
+  }
+
+  /* Make galleries cards wider on mobile */
+  .discover-galleries-section .galleries-swiper .swiper-slide,
+  .galleries-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+  }
+  .gallery-card { width: 92%; max-width: 92%; }
+  .gallery-card .gallery-image { height: 220px; object-fit: cover; }
+  /* Titles: Discover More Projects, Discover Galleries, Amenities (mobile sm) */
+  .discover-header .title,
+  .discover-galleries-section .galleries-title,
+  .Amenities-section .title {
+    font-size: 22px !important;
+    white-space: nowrap;
+  }
+  .discover-header .title span,
+  .Amenities-section .title span { font-size: 22px !important; }
+
+  /* Global section titles - small phones */
+  .title { font-size: 22px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .details-title { font-size: 22px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .furniture-title { font-size: 20px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .project-facts-title { font-size: 20px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .galleries-title { font-size: 22px !important; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  /* Footer - small phones */
+  .site-footer .footer-content { padding: 18px 0; }
+  .site-footer .footer-nav { gap: 12px; }
+  .site-footer .footer-link { font-size: 12px; }
+  .site-footer .logo-img { height: 32px; }
+}
+
+
+
+
+@media (max-width: 576px) {
+  .facts-list { 
+    display: grid;
+    grid-template-columns: 1fr;  /* موبايل: عمود واحد */
+    gap: 10px 14px; 
+    width: 100%;
+    max-width: none;
+    margin: 0;
   }
  
- 
 }
-@media (min-width: 1400px) {
-  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+
+@media (max-width: 576px) {
+  .Amenities-content {
+    height: 140px !important;   /* طول أقل جدًا على الموبايل */
+    padding: 0px 0px;  /* كمان نقلل البادينج */
   }
-  .toggle-btn{
-    display: none !important;
+
+  .overlay3 img {
+    width: 50px !important;
+    height: 50px !important;
   }
-  .sidebar {
-    width: 250px !important;
+
+  .overlay3 h5 {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  /* Map section text sizes - small phones */
+  .map-section .register-title .title-sub { font-size: 20px; }
+  .map-section .interest-form .form-control { font-size: 15px; padding: 10px 14px; }
+  .map-section .btn-submit { font-size: 15px; padding: 10px 20px; }
+  .map-section .overlay5 p { font-size: 16px; line-height: 1.55; }
 }
-.hidden{
-  display: block !important ;
+
+/* Explore (Explore More) responsive tweaks */
+@media (max-width: 992px) {
+  /* Tablet */
+  .explore-more-section { padding: 24px 0; }
+  .explore-more-section .explore-hero .hero-title { font-size: 28px; line-height: 1.25; }
+  .explore-more-section .explore-hero .btn.btn-lg { font-size: 14px; padding: 10px 18px; }
+  .explore-more-section .info-title { font-size: 18px; margin-bottom: 10px; }
+  .explore-more-section ul li a { font-size: 14px; }
+  .explore-more-section .row.g-4 { row-gap: 8px; }
+  .explore-more-section .explore-hero { margin-bottom: 18px; padding: 12px 0 42px; }
+  .explore-more-section .explore-info { margin-top: -12px; }
+  /* Left align lists on tablet */
+  .explore-more-section .explore-info .row > [class^="col-"],
+  .explore-more-section .explore-info .row > [class*=" col-"] { text-align: left; }
+  .explore-more-section .info-list, .explore-more-section ul { text-align: left; margin-left: 0; }
+  /* Ensure background section has enough height on tablet */
+  .explore-more-section { height: 760px; }
 }
+
+@media (max-width: 768px) {
+  /* Large phones / small tablets */
+  .explore-more-section { padding: 20px 0; }
+  .explore-more-section .explore-hero { margin-bottom: 16px; padding: 10px 0 36px; }
+  .explore-more-section .explore-hero .hero-title { font-size: 20px !important; }
+  .explore-more-section .explore-hero .btn.btn-lg { font-size: 13px; padding: 10px 16px; }
+  .explore-more-section .info-title { font-size: 17px; }
+  .explore-more-section ul { padding-left: 0; }
+  .explore-more-section ul li a { font-size: 13px; }
+  .explore-more-section .explore-info { margin-top: -14px; }
+  /* Keep two columns on small tablets too */
+  .explore-more-section .explore-info .row > [class^="col-"],
+  .explore-more-section .explore-info .row > [class*=" col-"] {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+  }
+  .explore-more-section .info-list, .explore-more-section ul { text-align: left; }
+  /* Background height for small tablets */
+  .explore-more-section { height: 700px; }
+}
+
+@media (max-width: 576px) {
+  /* Mobile */
+  .explore-more-section { padding: 18px 0; }
+  .explore-more-section .explore-content { text-align: center; }
+  .explore-more-section .explore-hero { margin-bottom: 12px; padding: 8px 0 30px; }
+  .explore-more-section .explore-hero .hero-title { font-size: 16px !important; line-height: 1.3; }
+  .explore-more-section .explore-hero .btn.btn-lg { font-size: 12px; padding: 8px 14px; }
+  .explore-more-section .info-title { font-size: 16px; }
+  .explore-more-section ul { padding-left: 0; }
+  .explore-more-section ul li a { font-size: 12.5px; }
+  .explore-more-section .row.g-4 > [class^="col-"] { text-align: left; }
+  .explore-more-section .explore-info { margin-top: -16px; }
+  /* Force two columns on mobile */
+  .explore-more-section .explore-info .row > [class^="col-"],
+  .explore-more-section .explore-info .row > [class*=" col-"] {
+    flex: 0 0 50%;
+    max-width: 50%;
+    text-align: left;
+  }
+  .explore-more-section .info-list, .explore-more-section ul { text-align: left; }
+  /* Background height for mobile */
+  .explore-more-section { height: 660px; }
 }

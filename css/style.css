@@ -45,7 +45,7 @@ body, p, span, div, a, button, input, textarea, select {
 
 /* Body padding to account for fixed navbar */
 body {
-    padding-top: 65px !important;
+    padding-top: 61px !important;
 }
 
 /* Bootstrap Navbar Customization */
@@ -153,9 +153,11 @@ button {
 
 .hero-title {
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 300 !important;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-transform: capitalize !important;
+    margin-bottom: 0px !important;
 }
 
 .hero-subtitle {
@@ -163,6 +165,7 @@ button {
     margin-bottom: 2rem;
     opacity: 0.9;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight:700 !important;
 }
 
 
@@ -186,6 +189,8 @@ button {
     
     .hero-title {
         font-size: 2.5rem;
+        text-transform: capitalize !important;
+
     }
     
     .hero-subtitle {
@@ -211,7 +216,7 @@ button {
 
 /* Price and Action Section */
 .price-action-section {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 
 /* Data Section Image */
@@ -402,6 +407,39 @@ button {
     transform: translateY(-2px);
 }
 
+/* Responsive Price Section */
+@media (max-width: 768px) {
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .hero-content h1{
+        font-size: 30px !important;
+        font-weight: 400 !important;
+    }
+    .hero-content p{
+        font-size: 16px !important;
+        font-weight: 400 !important;
+    }
+    .hero-content .warning{
+        font-size: 16px !important;
+        font-weight: 400 !important;
+        padding: 2px 4px  !important;
+    }
+    .hero-content .btn:hover{
+        background-color: var(--main-color-dark) !important;
+        transform: translateY(-2px);
+    }
+    .hero-content .btn:hover i{
+        transform: translateX(5px) !important;
+    }
+  
+    
+   
+}
 .price-info {
     text-align: left;
     margin-bottom: 30px;
@@ -413,16 +451,16 @@ button {
 
 }
 .price-text {
-    font-size: 1.25rem;
+    font-size: 20px!important;
     color: #333;
     margin: 0;
-    font-weight: 400;
+    font-weight: 500!important;
 }
 
 .price-amount {
     color: var(--third-color);
-    font-weight: 600;
-    font-size: 32px;
+    font-weight: 700;
+    font-size: 32px!important;
 }
 
 .action-buttons {
@@ -432,13 +470,14 @@ button {
     flex-wrap: wrap;
 }
 
-.action-buttons .btn {
-    padding: 13px 20px;
+.action-buttons .btn, .warning {
+    padding: 12px 25px 11px !important;
     font-weight: 600;
     font-size: 18px;
     border-radius: 50px;
     transition: all 0.3s ease;
     min-width: 200px;
+    color: white !important;
 }
 
 .action-buttons .btn-success {
@@ -452,7 +491,7 @@ button {
     transform: translateY(-2px);
 }
 
-.action-buttons .btn-warning {
+.action-buttons .btn-warning,.warning {
     background-color: var(--second-color);
     border-color: var(--second-color);
     color: white;
@@ -467,20 +506,43 @@ button {
 /* Responsive Price Section */
 @media (max-width: 768px) {
     .price-action-section {
-        padding: 30px 0;
+        padding: 15px 0;
+    }
+    
+    .price-action {
+        padding: 10px 0 !important;
+    }
+    
+    .price-action {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .price-info {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        text-align: center !important;
+        margin-bottom: 10px;
     }
     
     .price-text {
         font-size: 1.1rem;
+        text-align: center !important;
+        margin-bottom: 2px;
     }
     
     .price-amount {
         font-size: 1.3rem;
+        text-align: center !important;
     }
     
     .action-buttons {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
+        width: 100%;
     }
     
     .action-buttons .btn {
@@ -491,7 +553,7 @@ button {
 
 /* Binghatti Details Section */
 .binghatti-details-section {
-    padding: 80px 0;
+    padding: 25px 0;
     background-color: #ffffff;
 }
 
@@ -565,7 +627,7 @@ button {
 /* Responsive for Details Section */
 @media (max-width: 992px) {
     .binghatti-details-section {
-        padding: 60px 0;
+        padding: 20px 0;
     }
     
     .details-content {
@@ -597,7 +659,7 @@ button {
     }
     
     .binghatti-details-section {
-        padding: 40px 0;
+        padding: 15px 0;
     }
 }
 
@@ -716,46 +778,20 @@ button {
 /* Navigation Bar Styles - Now using Tailwind classes */
 /* Payment Section */
 .payment-section , .consult-section {
-    padding: 80px 0;
+    padding: 10px 0;
     background-color: #ffffff;
 }
-
-.payment-plan-title {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
+.payment-title {
     color: var(--main-color);
-}
-
-.payment-plan-title .title-main {
+    font-size: 35px;
     font-weight: 700;
-    display: block;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-.payment-plan-title .title-sub {
-    font-weight: 500;
-    display: block;
-    font-size: 1.2rem;
-    margin-top: 5px;
-}
-
-.payment-plan-btn {
-    background-color: var(--second-color);
-    color: white;
-    border: none;
-    border-radius: 25px;
-    padding: 8px 40px;
-    font-size: 18px;
-    font-weight: 400;
-    transition: all 0.3s ease;
-    display: block;
-    margin: 30px auto;
-}
-
-.payment-plan-btn:hover {
-    background-color: var(--second-color-dark);
-    transform: translateY(-2px);
-    color: white !important;
+.payment-subtitle {
+    font-size: 20px !important;
+    font-weight: 700 !important;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .payment-content ,.Amenities-content{
@@ -764,8 +800,9 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    padding: 60px 40px;
+    /* padding: 60px 40px; */
     height: 170px;
+    min-height: 200px;
     position: relative;
     overflow: visible;
     z-index: revert;
@@ -791,63 +828,10 @@ button {
    
 }
 
-.payment-content .overlay .payment-title {
-    color: white;
-    font-size: 75px;
-    font-weight: 700;
-}
-
-
-
-
-.payment-content .overlay .col-lg-4 {
-    position: relative;
-}
-
-.payment-content .overlay .col-lg-4:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 4px;
-    height: 100px;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-
-.payment-text-content {
-    background-color: rgba(255, 255, 255, 0.95);
-    padding: 40px;
-    border-radius: 15px;
-    backdrop-filter: blur(10px);
-    font-size: 30px;
-}
-.fs-22{
-    font-size: 22px !important;
-}
-
-.payment-title {
-    color: var(--main-color);
-    font-size: 38px;
-    font-weight: 700;
-    margin-bottom: 15px;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-.payment-subtitle {
-    font-size: 22px !important;
-    font-weight: 700 !important;
-    margin: 0 0 14px;
-    line-height: 1.4;
-    font-family: 'Nunito Sans', sans-serif;
-}
-
-
-
-.payment-image-container {
+/* .payment-image-container {
     height: 100%;
     min-height: 400px;
-}
+} */
 
 .btn-payment {
     background-color: var(--third-color);
@@ -866,57 +850,77 @@ button {
     color: white !important;
 }
 
-/* Responsive for Payment Section */
-@media (max-width: 992px) {
-    .payment-section {
-        padding: 60px 0;
-    }
-    
-    .payment-content {
-        padding: 40px 20px;
-        min-height: auto;
-    }
-    
-    .payment-text-content {
-        padding: 30px 20px;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-    
-    .payment-title {
-        font-size: 2rem;
-    }
-    
-    .payment-subtitle {
-        font-size: 1.3rem;
-    }
+
+
+.payment-plan-title .title-main {
+    font-weight: 700;
 }
 
-@media (max-width: 768px) {
-    .payment-title {
-        font-size: 1.8rem;
-    }
-    
-    .payment-subtitle {
-        font-size: 1.2rem;
-    }
-    
-    .payment-text {
-        font-size: 1rem;
-    }
-    
-    .payment-section {
-        padding: 40px 0;
-    }
-    
-    .payment-content {
-        padding: 30px 15px;
-    }
-    
-    .payment-text-content {
-        padding: 20px 15px;
-    }
+.payment-plan-title .title-sub {
+    font-weight: 500;
 }
+
+.payment-plan-btn {
+    background-color: var(--second-color);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 8px 40px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    display: block;
+    margin: 30px auto;
+}
+
+.payment-plan-btn:hover {
+    background-color: var(--second-color-dark);
+    transform: translateY(-2px);
+    color: white !important;
+}
+
+
+/* Force 3 columns layout inside overlay across all sizes */
+
+
+
+.payment-content .overlay .payment-title {
+    color: white;
+    font-size: 75px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+/* .payment-content .overlay .col-lg-4:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.8);
+} */
+
+/* .payment-text-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    font-size: 30px;
+} */
+.fs-22{
+    font-size: 22px !important;
+}
+
+
+
+
+
+
 
 
 .title{
@@ -1083,10 +1087,17 @@ button {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Desktop default: vertical list as before */
 .facts-list {
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.fact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .fact-label {
@@ -1106,36 +1117,11 @@ font-weight: 600;
 padding: 0 0 0 30px;
 }
 
-/* Responsive for Project Facts Section */
-@media (max-width: 992px) {
-    .project-facts-section {
-        padding: 60px 0;
-    }
-    
-    .project-facts-content {
-        padding: 30px 20px;
-        margin-top: 30px;
-    }
-    
-    .project-facts-image-container {
-        border-radius: 20px 20px 0 0;
-    }
-}
 
-@media (max-width: 768px) {
-    .project-facts-title {
-        font-size: 24px;
-        text-align: center;
-    }
-    
-    .project-facts-section {
-        padding: 40px 0;
-    }
-    
-    .project-facts-image-container {
-        height: 300px;
-    }
-}
+
+/* Force mobile-like layout between 974px and 668px */
+
+
 
 /* Consultation Section */
 .consultation-section {
@@ -1176,9 +1162,7 @@ padding: 0 0 0 30px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
-.consultation-button {
-    text-align: right;
-}
+
 
 .btn-consultation {
     background-color: var(--second-color);
@@ -1203,36 +1187,51 @@ padding: 0 0 0 30px;
 /* Responsive for Consultation Section */
 @media (max-width: 992px) {
     .consultation-section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
     
     .consultation-content {
-        padding: 40px 30px;
+        padding: 24px 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 12px;
     }
     
     .consultation-text h3 {
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
         margin-bottom: 20px;
     }
     
     .consultation-button {
-        text-align: center;
+        text-align: center !important;
     }
 }
 
 @media (max-width: 768px) {
     .consultation-text h3 {
-        font-size: 20px;
+        font-size: 18px;
     }
     
     .consultation-section {
-        padding: 40px 0;
+        padding: 24px 0;
     }
     
     .consultation-content {
-        padding: 30px 20px;
+        padding: 18px 14px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        border-radius: 0; /* remove rounded on mobile */
     }
+    .consultation-section::before { border-radius: 0 !important; }
+    .overlay2 { border-radius: 0; }
+    .consultation-button { text-align: center; margin-top: 10px; }
+    .btn-consultation { padding: 10px 20px; font-size: 13px; }
 }
 
 
@@ -1256,32 +1255,29 @@ position: relative;
     
    
 }
-.Amenities-content{
-    background-image: url(../images/9-2.jpg) !important;
-    background-position:  center center;
+.Amenities-content {
+    background-image: url(../images/9-2-qwnfj9tuzi49tn1hn3cd8s7e7oy07v006tuuz6f1x0.jpg) !important;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
     padding: 60px 40px;
-    height: 380px;
+    min-height: 380px;   /* بدل height ثابت */
+    height: auto;        /* ياخد المحتوى */
     position: relative;
-    overflow: visible;
-    z-index: revert;
-    object-fit: contain;
+    overflow: hidden;    /* عشان مفيش scroll زيادة */
+    z-index: 1;
 }
 
 .overlay3 {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0; /* اختصار top/right/bottom/left:0 */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0.8) !important;
     border-radius: 20px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .overlay3 h5 {
@@ -1364,8 +1360,9 @@ position: relative;
 /* Hero Section */
 .explore-hero {
     text-align: center;
-    margin-bottom: 60px;
-    padding: 40px 0;
+    margin-bottom: 24px;
+    padding: 20px 0 56px; /* move divider line lower */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.75);
 }
 
 .hero-title {
@@ -1408,9 +1405,25 @@ position: relative;
     transform: translateX(5px);
 }
 
+/* Explore hero main button sizing */
+.explore-more-section .explore-hero .btn.btn-lg {
+    font-size: 18px !important;
+    padding: 12px 24px !important;
+    background: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid #ffffff !important;
+    border-radius: 999px !important; /* fully rounded */
+}
+
+.explore-more-section .explore-hero .btn.btn-lg:hover {
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
 /* Information Sections */
 .explore-info {
-    margin-top: 80px;
+    margin-top: 12px;
 }
 
 .info-grid {
@@ -1450,6 +1463,15 @@ position: relative;
     transition: all 0.3s ease;
     display: block;
     padding: 5px 0;
+}
+
+/* Ensure all links in Explore section stay white even without .info-list class */
+.explore-more-section a {
+    color: #ffffff !important;
+    text-decoration: none;
+}
+.explore-more-section a:hover {
+    color: var(--second-color-light) !important;
 }
 
 
@@ -1898,3 +1920,4 @@ position: relative;
   .discover-galleries-section .swiper-slide {
     background-color: #ffffff !important;
   }
+ 
